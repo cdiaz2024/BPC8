@@ -13,9 +13,9 @@ public class BlackPlagueCritterRunner
 {
 	public static void main(String[] args)
 	{
-		ActorWorld world = new ActorWorld(new BoundedGrid<Actor>(8,8));
+		ActorWorld world = new ActorWorld(new BoundedGrid<Actor>(30,30));
 		world.add(new Location(0,0), new BlackPlagueCritter());world.add(new Location(1,1), new BlackPlagueCritter());
-		world.add(new Location(3,1), new Rock(Color.WHITE));
+		world.add(new Location(28,28), new Rock(Color.WHITE));
 		Actor red = new Actor();
 		red.setColor(Color.RED);
 		world.add(new Location(0,3), new Actor());
